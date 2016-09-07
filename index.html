@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html data-ng-app="datatablesPoc">
+<head>
+	<title>Angular Datatables POC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.6/jqc-1.12.3/dt-1.10.12/b-1.2.2/b-flash-1.2.2/b-html5-1.2.2/cr-1.3.2/r-2.1.0/se-1.2.0/datatables.css"/>
+	<link rel="stylesheet" type="text/css" href="app.css">
+ 	
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.6/jqc-1.12.3/dt-1.10.12/b-1.2.2/b-flash-1.2.2/b-html5-1.2.2/cr-1.3.2/r-2.1.0/se-1.2.0/datatables.js"></script>
+	<script type="text/javascript" src="bower_components/datatables-colresize/dataTables.colResize.js"></script>
+	<script type="text/javascript" src="helper/dt.ellipsis.js"></script>
+	<script type="text/javascript" src="helper/jq.fn.bootmodal.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="tableCtrl as ctrl">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6"><h2>Angular Datatable POC</h2></div>
+			<div class="col-xs-6">
+				<button class="btn btn-primary button pull-right" ng-click="ctrl.getOptions()" title="click to create datatable with new options">Toggle Options</button>
+				<button class="btn btn-primary button pull-right" ng-click="ctrl.openOptionsModal()" title="click to create datatable with new options">Change Options</button>
+			</div>
+			
+
+			<hr/></div>
+		<table data-datatable data-dt-options="ctrl.dtOptions" data-open="open()" id="datatable1" class="table table-striped dt-responsive nowrap" cellspacing="0" width="100%">
+	    </table>
+    </div>
+</body>
+</html>

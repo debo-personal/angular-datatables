@@ -1,0 +1,15 @@
+{
+		"ajax" 		  : "mock-data/data.json",
+        "colReorder"  : true,
+        "colResize"	  : true,
+        "responsive"  : true,
+        "ellipsis-len": 25,
+        "columns"     : [
+						    { "data": "name", "title": "t_name", "className": "dt-name" },
+						    { "data": "position", "title": "t_position", "className": "dt-position", "sortable" : true },
+						    { "data": "extn", "title": "t_extn", "className": "dt-extn" },
+						    { "data": "office", "title": "t_office", "className": "dt-office" },
+						    { "data": "start_date", "title": "t_start_date", "className": "dt-start-date" },
+						    { "data": "salary", "title": "t_salary", "className": "dt-salary", "visible" : true}
+						]
+}

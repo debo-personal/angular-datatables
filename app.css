@@ -1,0 +1,9 @@
+table.table {
+	border: 1px solid #DDD;
+}
+table.table > thead > tr > th {
+	border-right: 1px solid #DDD;
+}
+table.table > thead > tr > th:last-child {
+	border-right: 0;
+}
